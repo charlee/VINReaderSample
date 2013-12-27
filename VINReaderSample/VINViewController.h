@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VINViewController : UIViewController
+@interface VINViewController : UIViewController <ZBarReaderDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *resultText;
+@property (weak, nonatomic) IBOutlet UIImageView *resultImage;
+- (IBAction)scanButtonTapped;
 @end

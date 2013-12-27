@@ -22,6 +22,13 @@
 		D3DD42A1186E390800A2A2E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD4280186E390800A2A2E6 /* UIKit.framework */; };
 		D3DD42A9186E390800A2A2E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3DD42A7186E390800A2A2E6 /* InfoPlist.strings */; };
 		D3DD42AB186E390800A2A2E6 /* VINReaderSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DD42AA186E390800A2A2E6 /* VINReaderSampleTests.m */; };
+		D3DD42B7186E399E00A2A2E6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD42B6186E399E00A2A2E6 /* AVFoundation.framework */; };
+		D3DD42B9186E39A300A2A2E6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD42B8186E39A300A2A2E6 /* CoreMedia.framework */; };
+		D3DD42BB186E39A800A2A2E6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD42BA186E39A800A2A2E6 /* CoreVideo.framework */; };
+		D3DD42BD186E39AE00A2A2E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD42BC186E39AE00A2A2E6 /* QuartzCore.framework */; };
+		D3DD42BF186E39B600A2A2E6 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD42BE186E39B600A2A2E6 /* libiconv.dylib */; };
+		D3DD42C1186E3A3800A2A2E6 /* ZBarSDK in Resources */ = {isa = PBXBuildFile; fileRef = D3DD42C0186E3A3800A2A2E6 /* ZBarSDK */; };
+		D3DD42C3186E3A8F00A2A2E6 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD42C2186E3A8F00A2A2E6 /* libzbar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		D3DD42A6186E390800A2A2E6 /* VINReaderSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VINReaderSampleTests-Info.plist"; sourceTree = "<group>"; };
 		D3DD42A8186E390800A2A2E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3DD42AA186E390800A2A2E6 /* VINReaderSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VINReaderSampleTests.m; sourceTree = "<group>"; };
+		D3DD42B6186E399E00A2A2E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D3DD42B8186E39A300A2A2E6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D3DD42BA186E39A800A2A2E6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D3DD42BC186E39AE00A2A2E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D3DD42BE186E39B600A2A2E6 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		D3DD42C0186E3A3800A2A2E6 /* ZBarSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ZBarSDK; sourceTree = "<group>"; };
+		D3DD42C2186E3A8F00A2A2E6 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzbar.a; path = VINReaderSample/ZBarSDK/libzbar.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +76,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3DD42B7186E399E00A2A2E6 /* AVFoundation.framework in Frameworks */,
+				D3DD42B9186E39A300A2A2E6 /* CoreMedia.framework in Frameworks */,
+				D3DD42BB186E39A800A2A2E6 /* CoreVideo.framework in Frameworks */,
 				D3DD427F186E390800A2A2E6 /* CoreGraphics.framework in Frameworks */,
+				D3DD42BD186E39AE00A2A2E6 /* QuartzCore.framework in Frameworks */,
+				D3DD42BF186E39B600A2A2E6 /* libiconv.dylib in Frameworks */,
 				D3DD4281186E390800A2A2E6 /* UIKit.framework in Frameworks */,
 				D3DD427D186E390800A2A2E6 /* Foundation.framework in Frameworks */,
+				D3DD42C3186E3A8F00A2A2E6 /* libzbar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +123,12 @@
 		D3DD427B186E390800A2A2E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3DD42C2186E3A8F00A2A2E6 /* libzbar.a */,
+				D3DD42BE186E39B600A2A2E6 /* libiconv.dylib */,
+				D3DD42BC186E39AE00A2A2E6 /* QuartzCore.framework */,
+				D3DD42BA186E39A800A2A2E6 /* CoreVideo.framework */,
+				D3DD42B8186E39A300A2A2E6 /* CoreMedia.framework */,
+				D3DD42B6186E399E00A2A2E6 /* AVFoundation.framework */,
 				D3DD427C186E390800A2A2E6 /* Foundation.framework */,
 				D3DD427E186E390800A2A2E6 /* CoreGraphics.framework */,
 				D3DD4280186E390800A2A2E6 /* UIKit.framework */,
@@ -114,6 +140,7 @@
 		D3DD4282186E390800A2A2E6 /* VINReaderSample */ = {
 			isa = PBXGroup;
 			children = (
+				D3DD42C0186E3A3800A2A2E6 /* ZBarSDK */,
 				D3DD428B186E390800A2A2E6 /* VINAppDelegate.h */,
 				D3DD428C186E390800A2A2E6 /* VINAppDelegate.m */,
 				D3DD428E186E390800A2A2E6 /* Main_iPhone.storyboard */,
@@ -233,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3DD4293186E390800A2A2E6 /* Main_iPad.storyboard in Resources */,
+				D3DD42C1186E3A3800A2A2E6 /* ZBarSDK in Resources */,
 				D3DD4298186E390800A2A2E6 /* Images.xcassets in Resources */,
 				D3DD4290186E390800A2A2E6 /* Main_iPhone.storyboard in Resources */,
 				D3DD4287186E390800A2A2E6 /* InfoPlist.strings in Resources */,
@@ -396,6 +424,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VINReaderSample/VINReaderSample-Prefix.pch";
 				INFOPLIST_FILE = "VINReaderSample/VINReaderSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/charlee/Documents/iOSDev/VINReaderSample/VINReaderSample/ZBarSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,6 +441,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VINReaderSample/VINReaderSample-Prefix.pch";
 				INFOPLIST_FILE = "VINReaderSample/VINReaderSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/charlee/Documents/iOSDev/VINReaderSample/VINReaderSample/ZBarSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
