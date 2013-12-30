@@ -30,19 +30,22 @@
   // ADD: present a barcode reader that scans from the camera feed
   ZBarReaderViewController *reader = [ZBarReaderViewController new];
   reader.readerDelegate = self;
-  reader.supportedOrientationsMask = ZBarOrientationMaskAll;
+  reader.supportedOrientationsMask = ZBarOrientationMask(UIInterfaceOrientationLandscapeLeft);
+  reader.showsHelpOnFail = YES;
+  reader.tracksSymbols = YES;
+  reader.scanCrop = CGRectMake(0, 0, 1, 0.4);
   
   ZBarImageScanner *scanner = reader.scanner;
   // TODO: (optional) additional reader configuration here
   
   // EXAMPLE: disable rarely used I2/5 to improve performance
-  [scanner setSymbology: ZBAR_I25
-                 config: ZBAR_CFG_ENABLE
-                     to: 0];
+  [scanner setSymbology: ZBAR_I25 config: ZBAR_CFG_ENABLE to: 0];
+//  [scanner setSymbology:ZBAR_CODE39 config:ZBAR_CFG_ENABLE to:1];
+  [scanner setSymbology:0 config:ZBAR_CFG_X_DENSITY to:0];
+  [scanner setSymbology:0 config:ZBAR_CFG_Y_DENSITY to:1];
   
   // present and release the controller
-  [self presentModalViewController: reader
-                          animated: YES];
+  [self presentViewController:reader animated:YES completion:nil];
 }
 
 - (void) imagePickerController: (UIImagePickerController*) reader
@@ -56,6 +59,8 @@
     // EXAMPLE: just grab the first barcode
     break;
   
+  NSLog(@"%@", symbol.data);
+  
   // EXAMPLE: do something useful with the barcode data
   self.resultText.text = symbol.data;
   
@@ -64,7 +69,7 @@
   [info objectForKey: UIImagePickerControllerOriginalImage];
   
   // ADD: dismiss the controller (NB dismiss from the *reader*!)
-  [reader dismissModalViewControllerAnimated: YES];
+  [reader dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
