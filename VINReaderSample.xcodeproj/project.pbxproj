@@ -511,6 +511,7 @@
 				D3DD42B0186E390800A2A2E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3DD42B1186E390800A2A2E6 /* Build configuration list for PBXNativeTarget "VINReaderSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +520,7 @@
 				D3DD42B3186E390800A2A2E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
