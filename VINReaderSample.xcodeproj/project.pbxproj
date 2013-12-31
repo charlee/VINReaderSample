@@ -429,6 +429,8 @@
 					/Users/charlee/Documents/iOSDev/VINReaderSample/VINReaderSample/ZBarSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
+				"VALID_ARCHS[sdk=*]" = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,6 +448,7 @@
 					/Users/charlee/Documents/iOSDev/VINReaderSample/VINReaderSample/ZBarSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
