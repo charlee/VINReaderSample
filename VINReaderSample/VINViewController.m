@@ -46,7 +46,7 @@
   
   reader.videoQuality = UIImagePickerControllerQualityTypeIFrame1280x720;
   
-  reader.view.frame = CGRectMake(0, 192, 1024, 192);
+    reader.view.frame = CGRectMake(0, self.view.frame.size.width / 3, self.view.frame.size.height, self.view.frame.size.width / 3);
   [self.view addSubview:reader.view];
   
   NSLog(@"scanner showed.");
