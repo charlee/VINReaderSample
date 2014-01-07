@@ -36,7 +36,7 @@
   
 //  reader.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
   reader.supportedOrientationsMask = ZBarOrientationMask(UIInterfaceOrientationLandscapeLeft);
-  reader.scanCrop = CGRectMake(0, 0.25, 1, 0.25);
+  reader.scanCrop = CGRectMake(0, 0.33, 1, 0.33);
   
   ZBarImageScanner *scanner = reader.scanner;
   [scanner setSymbology:ZBAR_I25 config:ZBAR_CFG_ENABLE to:0];
